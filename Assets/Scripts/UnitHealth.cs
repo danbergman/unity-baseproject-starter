@@ -5,10 +5,12 @@ using UnityEngine.Events;
 
 public class UnitHealth : MonoBehaviour
 {
-    public FloatVariable HP;
-
+    [Header("Health")]
+    public FloatVariable HP;   
     public bool ResetHP;
     public FloatReference StartingHP;
+
+    [Header("Events")]
     public UnityEvent DamageEvent;
     public UnityEvent DeathEvent;
 
